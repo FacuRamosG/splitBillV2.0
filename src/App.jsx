@@ -159,7 +159,7 @@ function App() {
         <form onSubmit={handleSubmit} className='flex gap-4 justify-center items-center'>
           <input 
             type="text"
-            className='px-3 py-2.5 w-64 border border-gray-300 focus:ring-4 focus:ring-gray-100 focus:border-gray-100 rounded-lg text-sm dark:bg-gray-800 dark:border-gray-600 dark:focus:ring-gray-700 dark:focus:border-gray-700 dark:text-white'
+            className='px-3 py-2.5 w-64 border text-gray-900 border-gray-300 focus:ring-4 focus:ring-gray-100 focus:border-gray-100 rounded-lg text-sm dark:bg-gray-800 dark:border-gray-600 dark:focus:ring-gray-700 dark:focus:border-gray-700 dark:text-white'
             value={integrant}
             onChange={handleChange} />
           <button className='text-gray-900 px-3 py-2.5 bg-white border border-gray-300 focus:outline-none hover:bg-gray-100 focus:ring-4 focus:ring-gray-100 font-medium rounded-lg text-sm  dark:bg-gray-800 dark:text-white dark:border-gray-600 dark:hover:bg-gray-700 dark:hover:border-gray-600 dark:focus:ring-gray-700' >Sumar participante</button>
@@ -191,10 +191,10 @@ function App() {
         { swipe && <form className={`flex-col justify-center align-middle gap-4 mb-4  ${swipe ? 'mostrar' : 'hidden'}`}>
           <div className='flex flex-col'>
             <label htmlFor="" className="text-sm font-medium text-gray-900 dark:text-white">Nombre del gasto</label>  
-            <input type="text" placeholder='Ingrese el nombre del gasto' onChange={handleNombreGasto} value={nombreGasto} className='w-64 h-16 p-3'/>
+            <input type="text" placeholder='Ingrese el nombre del gasto' onChange={handleNombreGasto} value={nombreGasto} className='w-64 h-16 p-3 text-gray-900 dark:text-white'/>
 
             <label htmlFor="" className="text-sm font-medium text-gray-900 dark:text-white">Monto</label>
-            <input type="number" placeholder='Ingrese el monto' onChange={handleGasto} value={gastos} className='w-64 h-16 p-3'/>
+            <input type="number" placeholder='Ingrese el monto' onChange={handleGasto} value={gastos} className='w-64 h-16 p-3 text-gray-900 dark:text-white'/>
 
             <label htmlFor="integrants" className="text-sm font-medium text-gray-900 dark:text-white">Pagado por</label>
             <select id="integrants" onChange={handleSelectIntegrant} className="bg-gray-50 border w-96 border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 block p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
