@@ -151,8 +151,8 @@ function App() {
     <section className='p-4 max-w-3xl m-auto'>
       {integrants.length <= 0 && !cargaDeParticipantes && 
         <div className='flex flex-col justify-center items-center gap-4'>
-          <h1 className='text-4xl font-semibold text-gray-900 dark:text-white'>Divide tus gastos</h1>
-          <p className='text-gray-700 dark:text-gray-300'>Ingresa los participantes que van a dividir los gastos</p>
+          <h1 className='text-4xl font-semibold text-white'>Divide tus gastos</h1>
+          <p className='text-gray-300'>Ingresa los participantes que van a dividir los gastos</p>
         </div>
       }
       <div className='my-5'>
